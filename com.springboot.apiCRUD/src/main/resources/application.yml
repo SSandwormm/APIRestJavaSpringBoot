@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: apiCRUD
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/apicrud?createDatabaseIfNotExist=true
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+server:
+  port: 8080
